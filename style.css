@@ -19,7 +19,7 @@ html, body {
 }
 
 .signup-banner {
-    background-image: url("/hill.jpg");
+    background-image: url("/leaf_background.avif");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -30,7 +30,7 @@ html, body {
 
 .banner {
     background-color: black;
-    opacity: 0.3;
+    opacity: 0.6;
     height: calc(20vh + 10px); /* 20% of viewport height + additional 10px */
     width: 100%;
     position: absolute;
