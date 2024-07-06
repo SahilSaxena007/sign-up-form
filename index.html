@@ -7,6 +7,74 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <p>the odin sign up form</p>
+    <div class="signup-banner">
+        <div class="banner">
+            <img src="/odin-lined.png" alt="odin-logo">
+            <div class="logo">ODIN</div>
+        </div>
+        <div class="credits">
+
+        </div>
+    </div>
+    <div class="signup-main">
+        <div class="information">
+            <p>
+                This is not a real online service! you know you need something like this in your life to help you realize your deepest dreams. Sign up <em>now</em> to get started.
+            </p>
+            <p>
+                You <em>know</em> you want to.
+            </p>
+        </div>
+        <form action="" method="post">
+            <div class="input-info">
+                <h3>Let's do this!</h3>
+                <ul>
+                    <li>
+                        <div class="inputs">
+                            <label for="first_name">First Name</label>
+                            <input type="text" id="first_name" name="first_name" required minlength="4" maxlength="25">
+                        </div>
+                        
+                        <div class="inputs">
+                            <label for="last_name">Last Name</label>
+                            <input type="text" id="last_name" name="last_name" required minlength="4" maxlength="25">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="inputs">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email">
+                        </div>
+                        
+                        <div class="inputs">
+                            <label for="phone_number">Phone Number</label>
+                            <input type="text" id="phone_number" name="phone_number" placeholder="+971566488520">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="inputs">
+                            <label for="pass">Password</label>
+                            <input type="password" id="pass" name="pass" required minlength="8" class="passwords">
+                        </div>
+                        
+                        <div class="inputs">
+                            <label for="confirm_pass">Confirm Password</label>
+                            <input type="password" id="confirm_pass" name="confirm_pass" required minlength="8" class="passwords">
+                        </div>
+                    </li>
+                </ul>
+
+            </div>
+
+            <div class="submission">
+                <button type="submit">
+                    <span>Submit</span>
+                </button>
+                <div>Already have an account? <span>Log in</span></div>
+            </div>
+        </form>
+        
+         
+    </div>
 </body>
 </html>

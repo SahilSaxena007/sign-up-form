@@ -1,0 +1,162 @@
+@font-face {
+    font-family: 'norsebold';
+    src: url('font/norse-bold-webfont.woff2') format('woff2'),
+         url('font/norse-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+:root{
+    --col1: #f9fafb;
+    --col2: white;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+}
+
+.signup-banner {
+    background-image: url("/hill.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 40vw;
+    min-width: 250px;
+    position: relative;
+}
+
+.banner {
+    background-color: black;
+    opacity: 0.3;
+    height: calc(20vh + 10px); /* 20% of viewport height + additional 10px */
+    width: 100%;
+    position: absolute;
+    top: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5%;
+}
+
+.banner img {
+    max-height: 85%;
+    width: auto;
+    margin-bottom: 10px;
+}
+
+.logo {
+    font-family: 'norsebold';
+    font-size: 5rem;
+    color: white;
+    transition: font-size 0.3s ease;
+}
+
+.signup-main {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--col1);    
+}
+
+.information {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    height: 25%;
+    width: 80%;
+    padding-left: 10%;
+    font-weight: 550;
+}
+
+.input-info {
+    background-color: var(--col2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding-left: 6.5%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+h3 {
+    margin-left: 3vw;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 2.5vh;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+}
+
+li {
+    list-style-type: none;
+    display: flex;
+    gap: 5vw;
+}
+
+.submission {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    height: 25%;
+    width: 80%;
+    padding-left: 10%;
+    padding-top: 3.5%;
+    gap: 15%;
+
+}
+
+.submission>button{
+    width: 175px;
+    background-color: #596D48;
+    border: none;
+    height: 30px;
+    border-radius: 7px;
+}
+
+.submission>button>span{
+    color: white;
+    font-weight: 600;
+}
+
+.submission>div {
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.submission>div>span {
+    color: #596D48;
+}
+
+input{
+    border: 1px black solid;
+}
+
+input:focus{
+    border: 2px blue;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+input:focus:invalid{
+    outline: none;
+    border: 2px rgb(255, 155, 155) solid;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+input.passwords:invalid{
+    outline: none;
+    border: 2px rgb(240, 132, 132) solid   ;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+
