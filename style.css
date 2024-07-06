@@ -19,7 +19,7 @@ html, body {
 }
 
 .signup-banner {
-    background-image: url("/leaf_background.avif");
+    background-image: url("leaf_background.avif");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
